@@ -33,16 +33,9 @@ model Account {
   oauth_token_secret String?
   oauth_token        String?
   user               User    @relation(fields: [userId], references: [id], onDelete: Cascade)
-  provider_providerAccountId ProviderProviderAccountId? 
+
   @@unique([provider, providerAccountId])
   @@map("accounts")
-}
-
-model ProviderProviderAccountId {
-  providerAccountId String  @id
-  provider           String @default("google")
-  accountId String @unique @map("account_id")
-  account Account @relation(fields: [accountId], references: [id])
 }
 
 model Session {
