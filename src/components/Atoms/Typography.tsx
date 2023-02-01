@@ -96,7 +96,7 @@ const weightMapping = {
   bold: "font-bold",
 };
 
-export const Typography: React.FC<TypographyProps> = ({ variant = "p", size, color, weight, className, children = "", ...props }) => {
+export const Typography: React.FC<TypographyProps> = ({ variant = "p", size, color, weight, className = "", children = "", ...props }) => {
   const defaultClassName = variantMapping[variant];
   const { size: defaultSize, weight: defaultWeight } = defaultClassName;
 
@@ -106,7 +106,7 @@ export const Typography: React.FC<TypographyProps> = ({ variant = "p", size, col
   const weightClassName = weight ? weightMapping[weight] : weightMapping[defaultWeight || "normal"];
 
   return (
-    <Component className={`${sizeClassName}  ${weightClassName} ${className}`} {...props}>
+    <Component className={`${sizeClassName} ${weightClassName} ${className}`} {...props}>
       {children}
     </Component>
   );

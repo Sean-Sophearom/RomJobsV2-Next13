@@ -1,7 +1,7 @@
 import React from "react";
 import Link, { LinkProps } from "next/link";
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children?: React.ReactNode | string;
   variant?: "primary" | "secondary";
   className?: string;
@@ -50,7 +50,7 @@ export const Button: React.FC<RequireChildrenOrIcon> = ({
   }
 
   return (
-    <button className={componentClassname} {...props}>
+    <button className={componentClassname} {...props} onClick={() => console.log("hi")}>
       {Icon ? <Icon className={iconClassName} /> : null}
       {children}
     </button>
