@@ -1,1 +1,1 @@
-export { Navbar } from "./index";
+export { Navbar } from "./exporter";

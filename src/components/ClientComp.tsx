@@ -1,3 +1,3 @@
 "use client";
 
-export { Button } from "./index";
+export { Button } from "./exporter";

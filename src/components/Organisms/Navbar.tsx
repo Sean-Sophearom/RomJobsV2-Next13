@@ -1,6 +1,6 @@
 import { Session } from "next-auth";
 import Link from "next/link";
-import { Logo } from "@/components";
+import { Logo } from "@/components/exporter";
 
 interface NavbarProps {
   session: Session | null;
