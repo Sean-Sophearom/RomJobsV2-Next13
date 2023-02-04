@@ -9,7 +9,7 @@ const fontSize = { small: "", medium: "text-2xl", large: "" };
 
 export const Logo: React.FC<LogoProps> = ({ size = "medium", className = "" }) => {
   return (
-    <Link href="/" className={`text-purple-500 font-semibold ${fontSize[size]} ${className}`}>
+    <Link href="/" className={`text-pink-500 font-semibold ${fontSize[size]} ${className}`}>
       RomJOBS
     </Link>
   );

@@ -1,5 +1,5 @@
 export interface LangProps {
-  params: { lng: string };
+  params: { lng: "en" | "kh" };
 }
 
 import { createInstance } from "i18next";
