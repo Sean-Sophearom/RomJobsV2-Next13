@@ -1,3 +1,3 @@
 "use client";
 
-export { Button } from "./exporter/exporter";
+export { Button } from "../AtomicDesign/exporter/exporter";
