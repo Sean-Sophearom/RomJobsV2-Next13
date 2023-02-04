@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams, useSelectedLayoutSegments } from "next/navigation";
 import { useMemo } from "react";
 
 const langs = {
@@ -33,14 +33,16 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ lng }) => {
     let href = cur.href + pathname?.slice(3);
     let i = 0;
     for (const [key, value] of searchParams.entries()) {
-      if (i === 0) (href += `?${key}=${value}`) && i++;
-      else href += `&${key}=${value}`;
+      if (i === 0) (href += `?`) && i++;
+      else href += `&`;
+
+      href += `${key}=${value}`;
     }
     return href;
   }, [pathname, searchParams, cur.href]);
   return (
     <Link href={targetHref} className="rounded-full">
-      <Image src={cur.src} alt={cur.alt} width={128} height={128} className="w-[2em] aspect-square" />
+      <Image src={cur.src} alt={cur.alt} width={128} height={128} className="w-[1.75em] aspect-square" />
     </Link>
   );
 };
