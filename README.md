@@ -28,4 +28,4 @@ this is a remake of my old react project [RomJobs](https://github.com/Sean-Sophe
 
 ## Current Status : _Paused_
 
-Unfortunately, the project has been put on pause due to the unstability of Next13, which is currently in beta. When next13 hit official release, this project will be continued but right now it is just impossible to get anything serious done, for I have met bugs after bugs for even the smallest features. For instance, there is not even an api availeble for acessing the current route, yet which just shows how not-ready it currently is.
+Unfortunately, the project has been put on pause due to the unstability of Next13, which is currently in beta. When next13 hit official release, this project will be continued but right now it is just impossible to get anything serious done, for I have met bugs after bugs for even the smallest features. For instance, there is not even an api available for acessing the current route, yet which just shows how _not-ready_ and unstable it currently is.
