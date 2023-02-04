@@ -2,6 +2,8 @@ export interface LangProps {
   params: { lng: "en" | "kh" };
 }
 
+export type TType = (s: TranslationKeys) => string;
+
 import { createInstance } from "i18next";
 import resourcesToBackend from "i18next-resources-to-backend";
 import { initReactI18next } from "react-i18next/initReactI18next";
@@ -33,7 +35,7 @@ type Paths<T> = {
   [K in keyof T]: T[K] extends Record<string, unknown> ? Join<K, Paths<T[K]>> : K;
 }[keyof T];
 
-type TranslationKeys = Paths<typeof translations>;
+export type TranslationKeys = Paths<typeof translations>;
 
 export const useTypeSafeTranslation = async (lng: string) => {
   const { t } = await useTranslation(lng, "translation");
