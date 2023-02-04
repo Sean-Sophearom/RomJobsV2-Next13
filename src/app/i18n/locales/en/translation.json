@@ -1,4 +1,11 @@
 {
   "title": "hello worldd",
-  "key": "rom"
+  "navbar": {
+    "home": "Home",
+    "about-us": "About Us",
+    "jobs": "Jobs",
+    "contact": "Contact",
+    "login": "Login",
+    "sign-up": "Sign Up"
+  }
 }
