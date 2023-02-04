@@ -1,5 +1,6 @@
 import { Session } from "next-auth";
-import { Logo, LanguageSwitcher } from "@/components/ServerComp";
+import { Logo } from "@/components/ServerComp";
+import { LanguageSwitcher } from "../Atoms/LanguageSwitcher";
 
 interface NavbarProps {
   session: Session | null;

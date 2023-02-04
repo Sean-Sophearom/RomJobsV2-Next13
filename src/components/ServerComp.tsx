@@ -1,1 +1,1 @@
-export { Logo, Navbar, LanguageSwitcher } from "../AtomicDesign/exporter/exporter";
+export { Logo, Navbar } from "../AtomicDesign/exporter/exporter";
